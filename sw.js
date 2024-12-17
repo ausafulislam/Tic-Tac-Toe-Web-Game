@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tic-tac-toe-cache-v2';
+const CACHE_NAME = 'tic-tac-toe-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -24,9 +24,10 @@ self.addEventListener('install', (event) => {
     '/index.html',
     '/style.css',
     '/script.js',
-    '/logo.png',  // Your favicon
+    '/logo.png',  
     '/manifest.json',
-    'https://unpkg.com/boxicons/css/boxicons.min.css',  // External styles
+    '/sw.js',
+    'https://unpkg.com/boxicons/css/boxicons.min.css',  
   ];
   
   self.addEventListener('install', (event) => {

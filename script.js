@@ -235,11 +235,6 @@ if ("serviceWorker" in navigator) {
 }
 
 let deferredPrompt;
-const installBtn = document.createElement("button");
-installBtn.textContent = "Download App";
-installBtn.style.margin = "0%";
-installBtn.classList.add("btn");
-document.body.appendChild(installBtn);
 
 window.addEventListener("beforeinstallprompt", (e) => {
   // Prevent the mini-infobar from appearing
@@ -262,8 +257,3 @@ window.addEventListener("beforeinstallprompt", (e) => {
   });
 });
 
-// Optional: Hide the button after install
-window.addEventListener("appinstalled", () => {
-  installBtn.style.display = "none";
-  console.log("App installed successfully");
-});

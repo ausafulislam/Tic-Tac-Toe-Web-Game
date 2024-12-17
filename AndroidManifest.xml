@@ -1,0 +1,12 @@
+<manifest>
+  <application>
+    <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+    <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-7131909421099481~5419589500"/>
+
+         <!-- For apps targeting Android 13 or higher & GMA SDK version 20.3.0 or lower -->
+   <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+  </application>
+</manifest>
